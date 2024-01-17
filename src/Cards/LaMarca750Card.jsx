@@ -75,7 +75,7 @@ const LaMarca750Card = () => {
 
                             <h3>Hello, and welcome to Searchlight Market! My name is Myles and I am a full time sales rep / web developer hobbyist who created the card you are seeing now.</h3>
                             <h3>My goal is to help grow not only our portfolio of wines, beers, and spirits, but more importantly to grow the independent retail shops we know and love in the Bay Area through digital perspective.</h3>
-                            <h3>Take a look around the rest of the store to find more great beverages of ours.</h3>
+                            {/* <h3>Take a look around the rest of the store to find more great beverages of ours.</h3> */}
                             <h3>•</h3>
                             <h3>Searchlight Market is ran by an incredible team who are always there to help their customers. If you have any questions, feel free to reach out to anyone on the floor!</h3>
                         </div>

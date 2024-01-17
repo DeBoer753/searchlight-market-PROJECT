@@ -4,11 +4,17 @@
     height: 90vh; 
     margin: 0;
     padding: 0;
+    background-image: url('/public/imgs/rawImage.jpg');
+    background-size: cover; /* Adjust to cover the entire container */
+    background-position-x: -200px; 
+    background-position-y: -130px;
+    background-size: 800px;
 
 }
 @media screen and (orientation: landscape) {
     .app-container {
         height: 80vh;  /* Hide the body in landscape mode */
-        background-color: rgb(255, 255, 255)
+        background-color: rgb(255, 255, 255);
+        background-image: none;
     }
   }
