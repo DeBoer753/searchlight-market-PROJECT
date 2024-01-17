@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+// REACT
+import React from 'react';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// ROUTES
+import Home from '../src/Routes/Home'
+
+// CARDS
+import LaMarca750Card from './Cards/LaMarca750Card';
+
+// CSS
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='/' element={<Home />}/>
+          <Route path='/la-marca-prosecco-750' element={<LaMarca750Card />}/>
+        </Routes>
+      </BrowserRouter>
+    </body>
   );
-}
+};
 
 export default App;

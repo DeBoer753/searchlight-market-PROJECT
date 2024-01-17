@@ -1,0 +1,228 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Disable scrolling */
+    background-color: #8ac4ea;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Adjust the duration (1.5s in this example) */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 27px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    height: 30px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Adjust the duration (1.5s in this example) */
+}
+
+.floating-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.inner-element {
+    text-align: center;
+    color: #ffffff;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+img {
+    width: 60%;
+    /* background-color: white; */
+    margin-top: -200px;
+}
+.card-bottom-half {
+    background-color: #3a9cdd;
+    border-top: 3px white solid;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.description {
+    color: white;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.sku-description {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    text-align: left;
+    border-radius: 8px;
+    color: white;
+}
+
+.mini-box-container {
+    display: flex;
+    justify-content: space-between;
+}
+.mini-box-1 {
+    background-color: #3a9cdd;
+    width: 100%;
+    height: 75px;
+}
+.origin {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 0px;
+}
+.mini-box-2 {
+    background-color: #3a9cdd;
+    width: 100%;
+    height: 75px;
+    left: 0;
+}
+.score {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    /* background: linear-gradient(to right, #edd923, #ffd700, #febc21, #ffc403); */
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+}
+h6 {
+    margin-top: 5px;
+    font-size: 8px;
+    font-weight: 500;
+    font-style: italic;
+}
+.mini-box-3 {
+    background-color: #3a9cdd;
+    width: 100%;
+    height: 75px;
+}
+.taste {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 0px;
+}
+
+h4 {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+hr {
+    border: 0.1px rgb(255, 255, 255) solid;
+    width: 50px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+
+.floating-card {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    perspective: 1000px;
+    
+    background-image: url('/public/imgs/bubbles.PNG');
+    background-size: cover; /* Adjust to cover the entire container */
+    background-position: 65% center; 
+    padding-top: 0;
+    position: relative;
+    width: 325px;
+    height: 500px;
+    background-color: #8ac4ea;
+    border: 4px white solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    animation: floatUpDown 1.5s ease-in-out; /* Adjust the duration (1.5s in this example) */
+}
+
+.floating-card::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 20% center; /* Adjust the value to move the image left or right */
+}
+
+
+
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(70vh); /* Start below the screen */
+        opacity: 0;
+    }
+    45% {
+        transform: translateY(-5vh); /* Float above the middle of the screen */
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(0vh); /* Stay in the middle */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0); /* Remain at the middle */
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        opacity: 1; /* Fade in to opacity 1 */
+    }
+}
+@media (orientation: landscape) {
+    body {
+      /* Add styles to be applied when the device is in landscape orientation */
+      /* For example, you can set a specific background color or display a message */
+      backdrop-filter: blur(10px); /* Add a blur effect */
+    }
+  }
