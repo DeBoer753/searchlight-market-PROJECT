@@ -4,9 +4,6 @@ import React from 'react';
 // ROUTER
 import { Link } from 'react-router-dom';
 
-// CARDS
-import LaMarca750Card from '../Cards/LaMarca750Card';
-
 // CSS
 import './Home.css';
 
