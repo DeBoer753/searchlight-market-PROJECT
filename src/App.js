@@ -14,7 +14,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <body>
+    <div className='app-container'>
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
@@ -22,7 +22,7 @@ const App = () => {
           <Route path='/la-marca-prosecco-750' element={<LaMarca750Card />}/>
         </Routes>
       </BrowserRouter>
-    </body>
+    </div>
   );
 };
 
