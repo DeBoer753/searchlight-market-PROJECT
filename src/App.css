@@ -1,10 +1,7 @@
-.app-container {
+body {
     overflow: hidden;
     margin: 0;
     padding: 0;
     background-color: rgba(255, 255, 255, 0);
-    background-image: url('/public/imgs/bubbles.PNG');
-    background-size: cover; /* Adjust to cover the entire container */
-
 
 }
