@@ -1,6 +1,5 @@
 // REACT
 import React from 'react';
-import 'normalize.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // ROUTES
