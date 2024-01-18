@@ -4,8 +4,15 @@
     height: 110vh;
     /* background-color: #3a9cddb9; */
     background-size: cover; /* Adjust to cover the entire container */
+}
 
-
+/* CARD CONTAINER ---------------------------------------------------- CARD CONTAINER */
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -120px;
+    height: 120vh;
 }
 .alert {
     display: none;
@@ -16,33 +23,55 @@
     font-size: 20px;
     font-style: italic;
 }
-@media screen and (orientation: landscape) {
-    .main-container {
-        background-color: rgba(58, 156, 221, 0);
-    }
-    .flip-card-inner {
-      display: none; /* Hide the body in landscape mode */
-    }
-    .alert {
-        display: block;
-    }
-  }
 
-/* CARD CONTAINER ---------------------------------------------------- CARD CONTAINER */
-.card-container {
+/* FLIP CARD ---------------------------------------------------- FLIP CARD */
+.flip-card {
+    perspective: 2000px;
+    width: 325px;
+    height: 500px;
+    animation: floatUpDown 1.5s ease-in-out; 
+  }
+/* IMPORTANT: if you seperate the '.' from flip-card and flipped, it wont work */
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.flip-card::before {
+    content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+}
+  
+/* FLIP CARD FRONT ---------------------------------------------------- CARD  */
+.flip-card-front {
+    background-image: url('/public/imgs/backgrounds/bubbles.png');
+    background-size: cover; /* Adjust to cover the entire container */
+    background-position: 65% center; 
+    padding-top: 0;
+
+    margin-left: -4.2px; /* Fixes the margin of the flip */
+    width: 325px;
+    height: 500px;
+    background-color: #8ac4ea;
+    border: 4px white solid;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -120px;
-    height: 120vh;
-
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    animation: floatUpDown 1.5s ease-in-out; 
 }
-
-/* FRONT CARD ---------------------------------------------------- FRONT CARD  */
 .inner-element {
     text-align: center;
     color: #ffffff;
-    
 }
 .icon-container {
     background-color: #3a9cdd;
@@ -62,10 +91,6 @@
     left: 6px;
     top: 38px;
 }
-.flip-card-front h3 {
-    margin-top: 5px;
-    margin-bottom: -10px;
-}
 .flip-card-front img {
     width: 60%;
     margin-top: -200px;
@@ -84,6 +109,10 @@
     width: 100%;
     border-bottom-right-radius: 5px ;
     border-bottom-left-radius: 5px;
+}
+.flip-card-front h3 {
+    margin-top: 5px;
+    margin-bottom: -10px;
 }
 .flip-card-front .description {
     color: white;
@@ -111,12 +140,23 @@
     display: flex;
     justify-content: space-between;
 }
+.flip-card-front  h4 {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.flip-card-front hr {
+    border: 0.1px rgb(255, 255, 255) solid;
+    width: 50px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
 .flip-card-front .mini-box-1 {
     background-color: #3a9cdd;
     width: 100%;
     height: 75px;
 }
-.flip-card-front .origin {
+.flip-card-front .mini-box-1 .origin {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
     font-weight: 200;
@@ -128,7 +168,7 @@
     height: 75px;
     left: 0;
 }
-.flip-card-front .score {
+.flip-card-front .mini-box-2 .score {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 0px;
@@ -141,7 +181,7 @@
     -webkit-background-clip: text;
     color: transparent; */
 }
-.flip-card-front h6 {
+.flip-card-front .mini-box-2 h6 {
     margin-top: 5px;
     font-size: 8px;
     font-weight: 500;
@@ -153,77 +193,15 @@
     width: 100%;
     height: 75px;
 }
-.flip-card-front .taste {
+.flip-card-front .mini-box-3 .taste {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
     font-weight: 200;
     margin-top: 0px;
 }
 
-.flip-card-front h4 {
-    font-size: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.flip-card-front hr {
-    border: 0.1px rgb(255, 255, 255) solid;
-    width: 50px;
-    margin-top: 2px;
-    margin-bottom: 3px;
-}
-
-
-
-
-
-/* FLIP CARD ---------------------------------------------------- FLIP CARD */
-.flip-card {
-    perspective: 2000px;
-    width: 325px;
-    height: 500px;
-
-    animation: floatUpDown 1.5s ease-in-out; /* Adjust the duration (1.5s in this example) */
-  }
-
-  .flip-card::before {
-    content: "";
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
-   }
-  
-  .flip-card-inner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-
-  }
-  
-  .flip-card.flipped .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front {
-    background-image: url('/public/imgs/bubbles.PNG');
-    background-size: cover; /* Adjust to cover the entire container */
-    background-position: 65% center; 
-    padding-top: 0;
-
-    margin-left: -4.2px; /* Fixes the margin of the flip */
-    width: 325px;
-    height: 500px;
-    background-color: #8ac4ea;
-    border: 4px white solid;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
-    animation: floatUpDown 1.5s ease-in-out; /* Adjust the duration (1.5s in this example) */
-  }
-  .flip-card-back {
+/* FLIP CARD BACK ---------------------------------------------------- FLIP CARD BACK */
+.flip-card-back {
     /* background-image: url('/public/imgs/bubbles.PNG'); */
     background-size: cover; /* Adjust to cover the entire container */
     background-position: 65% center; 
@@ -234,31 +212,32 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  .flip-card-back div {
+    transform: rotateY(180deg);
+}
+.flip-card-back div {
     background-color: #3a9cdd;
     border-radius: 5px;
     height: 500px;
-  }
-  .flip-card-back h1 {
+}
+.flip-card-back h1 {
     font-family: cursive;
     text-align: center;
     font-size: 20px;
     color: white;
     margin-bottom: 5px;
-  }
-  .flip-card-back h2 {
+}
+.flip-card-back h2 {
     text-align: center;
     color: white;
     margin-top: 0;
     margin-bottom: 5px;
-  }
-  .flip-card-back hr {
+}
+.flip-card-back hr {
     border: 0.1px rgb(255, 255, 255) solid;
     width: 150px;
     margin-bottom: 3px;
-  }
-  .flip-card-back h3 {
+}
+.flip-card-back h3 {
     text-align: center;
     font-size: 13px;
     color: white;
@@ -268,10 +247,12 @@
     margin-left: 30px;
     font-size: 13px;
     font-weight: 200;
-  }
+} 
 
-  .flip-card-front,
-  .flip-card-back {
+
+/* FLIP CARD FRONT AND BACK ---------------------------------------------------- FLIP CARD FRONT AND BACK */
+.flip-card-front,
+.flip-card-back {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -280,14 +261,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-  }
-  
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
+}
 
-  /* OPACITY FADE ---------------------------------------------------- TITLE FADE */
-  @keyframes fadeIn {
+/* OPACITY FADE ---------------------------------------------------- OPACITY FADE */
+@keyframes fadeIn {
     0% {
         opacity: 0; /* Start with opacity 0 */
     }
@@ -295,6 +272,8 @@
         opacity: 1; /* Fade in to opacity 1 */
     }
 }
+
+/* FLOAT UP ---------------------------------------------------- FLOAT UP */
 @keyframes floatUpDown {
     0% {
         transform: translateY(70vh); /* Start below the screen */
@@ -313,3 +292,16 @@
         opacity: 1;
     }
 }
+
+/* LANDSCAPE MODE ---------------------------------------------------- LANDSCAPE MODE */
+@media screen and (orientation: landscape) {
+    .main-container {
+        background-color: rgba(58, 156, 221, 0);
+    }
+    .flip-card-inner {
+      display: none; /* Hide the body in landscape mode */
+    }
+    .alert {
+        display: block;
+    }
+  }

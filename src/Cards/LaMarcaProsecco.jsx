@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 
 // CSS
-import '../Cards/LaMarca750Card.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import '../Cards/LaMarcaProsecco.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// LAMARCA750CARD
-const LaMarca750Card = () => {
+// LAMARCA PROSECCO
+const LaMarcaProsecco = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -34,7 +34,7 @@ const LaMarca750Card = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/lamarca750.PNG'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/lamarca_prosecco.png'} alt="" />
                             
                             <div className='card-bottom-half'>
                                 <h3>La Marca</h3>
@@ -65,8 +65,6 @@ const LaMarca750Card = () => {
 
 
 
-
-
                     {/* Back side */}
                     <div className="flip-card-back">
                         <div>
@@ -84,7 +82,6 @@ const LaMarca750Card = () => {
 
 
 
-
                 </div>
             </div>
         </div>
@@ -93,4 +90,4 @@ const LaMarca750Card = () => {
   );
 };
 
-export default LaMarca750Card;
+export default LaMarcaProsecco;

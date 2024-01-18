@@ -1,19 +1,28 @@
-
 .app-container{
     overflow: hidden;
     height: 90vh; 
     margin: 0;
     padding: 0;
-    background-image: url('/public/imgs/sf_wallpaper.png');
-    background-size: cover; /* Adjust to cover the entire container */
-    background-position-x: -200px; 
+
+    /* Default Wallpaper: */
+    background-image: url('/public/imgs/wallpapers/sf_wallpaper.png');
+    background-size: cover; 
+    background-position-x: -215px; 
     background-position-y: -130px;
     background-size: 800px;
 
+    /* Holiday/Events Wallpaper: */
+    /* 
+    background-image: url('');
+    background-size: cover; 
+    background-position-x:  
+    background-position-y: 
+    background-size: 
+    */
 }
 @media screen and (orientation: landscape) {
     .app-container {
-        height: 80vh;  /* Hide the body in landscape mode */
+        height: 80vh; 
         background-color: rgb(255, 255, 255);
         background-image: none;
     }

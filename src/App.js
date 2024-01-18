@@ -6,11 +6,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../src/Routes/Home'
 
 // CARDS
-import LaMarca750Card from './Cards/LaMarca750Card';
+import LaMarca750Card from './Cards/LaMarcaProsecco';
 
 // CSS
 import './App.css';
 
+// APP
 const App = () => {
   return (
     <div className='app-container'>
