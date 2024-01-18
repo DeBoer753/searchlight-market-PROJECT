@@ -50,7 +50,7 @@ const LaMarcaProsecco = () => {
                                         <h4>Score</h4> 
                                         <hr />
                                         <h5 className='score'>3.8 / 5</h5>
-                                        <h6>• 30K+ Ratings on Vivino •</h6>
+                                        <h6>• <span>30K+</span> Ratings on Vivino •</h6>
                                     </div>
                                     <div className='mini-box-3'>
                                         <h4>Taste</h4>

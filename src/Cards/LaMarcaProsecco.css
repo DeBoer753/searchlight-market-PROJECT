@@ -181,6 +181,9 @@
     -webkit-background-clip: text;
     color: transparent; */
 }
+.flip-card-front .mini-box-2 span {
+    font-weight: bold;
+}
 .flip-card-front .mini-box-2 h6 {
     margin-top: 5px;
     font-size: 8px;

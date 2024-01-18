@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../src/Routes/Home'
 
 // CARDS
-import LaMarca750Card from './Cards/LaMarcaProsecco';
+import LaMarcaProsecco from './Cards/LaMarcaProsecco';
 
 // CSS
 import './App.css';
@@ -19,7 +19,7 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/' element={<Home />}/>
-          <Route path='/la-marca-prosecco-750' element={<LaMarca750Card />}/>
+          <Route path='/la-marca-prosecco' element={<LaMarcaProsecco />}/>
         </Routes>
       </BrowserRouter>
     </div>
