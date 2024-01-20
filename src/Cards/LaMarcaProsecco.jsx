@@ -37,20 +37,20 @@ const LaMarcaProsecco = () => {
                             <img src={process.env.PUBLIC_URL + '/imgs/skus/lamarca_prosecco.png'} alt="" />
                             
                             <div className='card-bottom-half'>
+                                <h5 className='of-age'>• Must be 21 years or older to purchase •</h5>
                                 <h3>La Marca</h3>
                                 <p className='description'>Description</p>
-                                <p className='sku-description'>Elevate any occasion with the refreshing bubbles of La Marca, a sparkling touch to your favorite dishes. Everything from crisp salads to seafood delights. Cheers to an effortlessly elegant experience!</p>
+                                <p className='sku-description'>With its crisp and refreshing notes of green apple and citrus, La Marca's perfect for toasting during gatherings, brunches, or any joyous occasion. Cheers to making memories with La Marca Prosecco.</p>
                                 <div className='mini-box-container'>
                                     <div className='mini-box-1'>
+                                        <h4>Pairing</h4> 
+                                        <hr />
+                                        <h5 className='pairing'>Seafood<br />Pasta<br />Cake</h5>
+                                    </div>
+                                    <div className='mini-box-2'>
                                         <h4>Origin</h4>
                                         <hr />
                                         <h5 className='origin'>Prosecco, Italy</h5>
-                                    </div>
-                                    <div className='mini-box-2'>
-                                        <h4>Score</h4> 
-                                        <hr />
-                                        <h5 className='score'>3.8 / 5</h5>
-                                        <h6>• <span>30K+</span> Ratings on Vivino •</h6>
                                     </div>
                                     <div className='mini-box-3'>
                                         <h4>Taste</h4>

@@ -52,15 +52,19 @@
   
 /* FLIP CARD FRONT ---------------------------------------------------- CARD  */
 .flip-card-front {
-    background-image: url('/public/imgs/backgrounds/bubbles.png');
-    background-size: cover; /* Adjust to cover the entire container */
+    /* Holiday/Events Background: */
+    background-image: url('/public/imgs/backgrounds/test.png');
+    background-size: cover; 
     background-position: 65% center; 
     padding-top: 0;
+
+    /* Default Background: */
+    background: radial-gradient(circle, #ffffff, #4a9ed6);
+    background-position: center -30px;
 
     margin-left: -4.2px; /* Fixes the margin of the flip */
     width: 325px;
     height: 500px;
-    background-color: #8ac4ea;
     border: 4px white solid;
     border-radius: 10px;
     display: flex;
@@ -110,6 +114,16 @@
     border-bottom-right-radius: 5px ;
     border-bottom-left-radius: 5px;
 }
+.of-age {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 6.5px;
+    font-style: italic;
+    font-weight: 600;
+}
 .flip-card-front h3 {
     margin-top: 5px;
     margin-bottom: -10px;
@@ -156,7 +170,7 @@
     width: 100%;
     height: 75px;
 }
-.flip-card-front .mini-box-1 .origin {
+.flip-card-front .mini-box-1 .pairing {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
     font-weight: 200;
@@ -168,7 +182,13 @@
     height: 75px;
     left: 0;
 }
-.flip-card-front .mini-box-2 .score {
+.flip-card-front .mini-box-2 .origin {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 0px;
+}
+/* .flip-card-front .mini-box-2 .score {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 0px;
@@ -176,11 +196,10 @@
     font-size: 20px;
     font-weight: bold;
     color:white;
-    /* background: linear-gradient(to right, #edd923, #ffd700, #febc21, #ffc403); */
-    /* background-clip: text;
+    background-clip: text;
     -webkit-background-clip: text;
-    color: transparent; */
-}
+    color: transparent;
+} */
 .flip-card-front .mini-box-2 span {
     font-weight: bold;
 }
