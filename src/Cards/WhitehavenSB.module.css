@@ -1,13 +1,13 @@
 /* MAIN CONTAINER ---------------------------------------------------- MAIN CONTAINER */
-.main-container {
+.mainContainer {
     /* overflow: hidden;  */
     height: 110vh;
-    /* background-color: #3a9cddb9; */
+    /* background-color: ; */
     background-size: cover; /* Adjust to cover the entire container */
 }
 
 /* CARD CONTAINER ---------------------------------------------------- CARD CONTAINER */
-.card-container {
+.cardContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,23 +25,23 @@
 }
 
 /* FLIP CARD ---------------------------------------------------- FLIP CARD */
-.flip-card {
+.flipCard {
     perspective: 2000px;
     width: 325px;
     height: 500px;
     animation: floatUpDown 1.5s ease-in-out; 
-  }
-/* IMPORTANT: if you seperate the '.' from flip-card and flipped, it wont work */
-.flip-card.flipped .flip-card-inner {
+}
+/* IMPORTANT: if you seperate the '.' from flipCard and flipped, it wont work */
+.flipCard.flipped .flipCardInner {
     transform: rotateY(180deg);
 }
-.flip-card-inner {
+.flipCardInner {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
-.flip-card::before {
+.flipCard::before {
     content: "";
        position: absolute;
        top: 0;
@@ -51,7 +51,7 @@
 }
   
 /* FLIP CARD FRONT ---------------------------------------------------- CARD  */
-.flip-card-front {
+.flipCardFront {
     /* Holiday/Events Background: */
     background-image: url('/public/imgs/backgrounds/test.png');
     background-size: cover; 
@@ -59,7 +59,7 @@
     padding-top: 0;
 
     /* Default Background: */
-    background: radial-gradient(circle, #ffffff, #4a9ed6);
+    background: radial-gradient(circle, #ffffff, #32922d);
     background-position: center -30px;
 
     margin-left: -4.2px; /* Fixes the margin of the flip */
@@ -73,12 +73,12 @@
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
     animation: floatUpDown 1.5s ease-in-out; 
 }
-.inner-element {
+.innerElement {
     text-align: center;
     color: #ffffff;
 }
-.icon-container {
-    background-color: #3a9cdd;
+.iconContainer {
+    background-color: #248f1e;
     width: 60px;
     height: 60px;
     position: absolute;
@@ -89,18 +89,18 @@
     border-left: 4px white solid;
     border-bottom: 4px white solid;
 }
-.tap-icon {
+.tapIcon {
     width: 50px;
     position: absolute;
     left: 6px;
     top: 38px;
 }
-.flip-card-front img {
+.flipCardFront img {
     width: 60%;
     margin-top: -200px;
 }
-.flip-card-front .card-bottom-half {
-    background-color: #3a9cdd;
+.flipCardFront .cardBottomHalf {
+    background-color: #32922d;
     border-top: 3px white solid;
     margin-top: 5px;
     overflow: hidden;
@@ -114,7 +114,7 @@
     border-bottom-right-radius: 5px ;
     border-bottom-left-radius: 5px;
 }
-.of-age {
+.ofAge {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 0;
@@ -124,11 +124,11 @@
     font-style: italic;
     font-weight: 600;
 }
-.flip-card-front h3 {
+.flipCardFront h3 {
     margin-top: 5px;
     margin-bottom: -10px;
 }
-.flip-card-front .description {
+.flipCardFront .description {
     color: white;
     text-align: left;
     font-size: 10px;
@@ -137,7 +137,7 @@
     margin-right: 10px;
     margin-bottom: 0;
 }
-.flip-card-front .sku-description {
+.flipCardFront .skuDescription {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 200;
     height: 70px;
@@ -150,45 +150,45 @@
     border-radius: 8px;
     color: white;
 }
-.flip-card-front .mini-box-container {
+.flipCardFront .miniBoxContainer {
     display: flex;
     justify-content: space-between;
 }
-.flip-card-front  h4 {
+.flipCardFront  h4 {
     font-size: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.flip-card-front hr {
+.flipCardFront hr {
     border: 0.1px rgb(255, 255, 255) solid;
     width: 50px;
     margin-top: 2px;
     margin-bottom: 3px;
 }
-.flip-card-front .mini-box-1 {
-    background-color: #3a9cdd;
+.flipCardFront .miniBox1 {
+    background-color: #32922d;
     width: 100%;
     height: 75px;
 }
-.flip-card-front .mini-box-1 .pairing {
+.flipCardFront .miniBox1 .pairing {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
     font-weight: 200;
     margin-top: 0px;
 }
-.flip-card-front .mini-box-2 {
-    background-color: #3a9cdd;
+.flipCardFront .miniBox2 {
+    background-color: #32922d;
     width: 100%;
     height: 75px;
     left: 0;
 }
-.flip-card-front .mini-box-2 .origin {
+.flipCardFront .miniBox2 .origin {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
     font-weight: 200;
     margin-top: 0px;
 }
-/* .flip-card-front .mini-box-2 .score {
+/* .flipCardFront .miniBox2 .score {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 0px;
@@ -200,22 +200,22 @@
     -webkit-background-clip: text;
     color: transparent;
 } */
-.flip-card-front .mini-box-2 span {
+.flipCardFront .miniBox2 span {
     font-weight: bold;
 }
-.flip-card-front .mini-box-2 h6 {
+.flipCardFront .miniBox2 h6 {
     margin-top: 5px;
     font-size: 8px;
     font-weight: 500;
     font-style: italic;
 }
-.flip-card-front .mini-box-3 {
-    background-color: #3a9cdd;
+.flipCardFront .miniBox3 {
+    background-color: #32922d;
     border-radius: 10px;
     width: 100%;
     height: 75px;
 }
-.flip-card-front .mini-box-3 .taste {
+.flipCardFront .miniBox3 .taste {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 10px;
     font-weight: 200;
@@ -223,7 +223,7 @@
 }
 
 /* FLIP CARD BACK ---------------------------------------------------- FLIP CARD BACK */
-.flip-card-back {
+.flipCardBack {
     /* background-image: url('/public/imgs/bubbles.PNG'); */
     background-size: cover; /* Adjust to cover the entire container */
     background-position: 65% center; 
@@ -236,45 +236,52 @@
     flex-direction: column;
     transform: rotateY(180deg);
 }
-.flip-card-back div {
-    background-color: #3a9cdd;
+.flipCardBack div {
+    background-color: #32922d;
     border-radius: 5px;
     height: 500px;
 }
-.flip-card-back h1 {
+.flipCardBack h1 {
     font-family: cursive;
     text-align: center;
     font-size: 20px;
     color: white;
     margin-bottom: 5px;
 }
-.flip-card-back h2 {
+.flipCardBack h2 {
     text-align: center;
     color: white;
     margin-top: 0;
     margin-bottom: 5px;
 }
-.flip-card-back hr {
+.flipCardBack hr {
     border: 0.1px rgb(255, 255, 255) solid;
     width: 150px;
     margin-bottom: 3px;
 }
-.flip-card-back h3 {
+.flipCardBack img {
+    width: 35px;
+    margin-left: 145px;
+}
+.flipCardBack h3 {
     text-align: center;
     font-size: 13px;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 30px;
     margin-left: 30px;
     font-size: 13px;
     font-weight: 200;
 } 
-
+.flipCardBack .rescan {
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* FLIP CARD FRONT AND BACK ---------------------------------------------------- FLIP CARD FRONT AND BACK */
-.flip-card-front,
-.flip-card-back {
+.flipCardFront,
+.flipCardBack {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -317,10 +324,10 @@
 
 /* LANDSCAPE MODE ---------------------------------------------------- LANDSCAPE MODE */
 @media screen and (orientation: landscape) {
-    .main-container {
+    .mainContainer {
         background-color: rgba(58, 156, 221, 0);
     }
-    .flip-card-inner {
+    .flipCardInner {
       display: none; /* Hide the body in landscape mode */
     }
     .alert {

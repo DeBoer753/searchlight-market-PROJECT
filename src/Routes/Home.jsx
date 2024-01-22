@@ -13,6 +13,9 @@ const Home = () => {
     <div className='home-container'>
       <h1>Searchlight Market</h1>
         <Link to='/la-marca-prosecco'>La Marca Prosecco</Link>
+        <Link to='/j-chardonnay'>J Chardonnay</Link>
+        <Link to='/jlohr-seven-oaks'>J. Lohr Seven Oaks</Link>
+        <Link to='/whitehaven-sb'>Whitehaven Sauvignon Blanc</Link>
     </div>
   );
 };

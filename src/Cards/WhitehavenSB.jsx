@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 
 // CSS
-import styles from '../Cards/LaMarcaProsecco.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/WhitehavenSB.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// LAMARCA PROSECCO
-const LaMarcaProsecco = () => {
+// WHITEHAVEN SB
+const WhitehavenSB = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -34,28 +34,28 @@ const LaMarcaProsecco = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/lamarca_prosecco.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/whitehaven_sb.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>La Marca Prosecco</h3>
+                                <h3>Whitehaven Sauvignon Blanc</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>With its crisp and refreshing notes of green apple and citrus, La Marca's perfect for toasting during gatherings, brunches, or any joyous occasion. Cheers to making memories with La Marca Prosecco.</p>
+                                <p className={styles.skuDescription}>Whitehaven founders, Greg and Sue, were captivated by the idea of cultivating vineyards in a picturesque landscape. Their love for sailing not only led them to live in Marlborough, but also inspired the vision to create world-class wines that reflect the region.</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Seafood<br />Pasta<br />Cake</h5>
+                                        <h5 className={styles.pairing}>Grilled fish<br />Asparagus<br />Goat cheese</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Prosecco, Italy</h5>
+                                        <h5 className={styles.origin}>Marlborough, New Zealand</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Light<br />Acidic<br />Fizzy</h5>
+                                        <h5 className={styles.taste}>Light<br />Dry<br />Acidic</h5>
                                     </div>
                                 </div>
                             </div>
@@ -91,4 +91,4 @@ const LaMarcaProsecco = () => {
   );
 };
 
-export default LaMarcaProsecco;
+export default WhitehavenSB;

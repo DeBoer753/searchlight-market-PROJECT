@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 
 // CSS
-import styles from '../Cards/LaMarcaProsecco.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/JLohrSevenOaks.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// LAMARCA PROSECCO
-const LaMarcaProsecco = () => {
+// J LOHR SEVEN OAKS
+const JLohrSevenOaks = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -34,28 +34,28 @@ const LaMarcaProsecco = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/lamarca_prosecco.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/jlohr_seven_oaks.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>La Marca Prosecco</h3>
+                                <h3>J. Lohr Seven Oaks</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>With its crisp and refreshing notes of green apple and citrus, La Marca's perfect for toasting during gatherings, brunches, or any joyous occasion. Cheers to making memories with La Marca Prosecco.</p>
+                                <p className={styles.skuDescription}>J. Lohr Seven Oaks Cabernet is perfect for cozy evenings and social gatherings. With its rich aromas of black cherry and dark caramel, this full-bodied red wine elevates any moment. Enjoy its velvety profile during meals or special occasions.</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Seafood<br />Pasta<br />Cake</h5>
+                                        <h5 className={styles.pairing}>Steak<br />Beef stew<br />Grilled portobellos</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Prosecco, Italy</h5>
+                                        <h5 className={styles.origin}>Paso Robles, CA</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Light<br />Acidic<br />Fizzy</h5>
+                                        <h5 className={styles.taste}>Bold<br />Dry<br />Tannic</h5>
                                     </div>
                                 </div>
                             </div>
@@ -91,4 +91,4 @@ const LaMarcaProsecco = () => {
   );
 };
 
-export default LaMarcaProsecco;
+export default JLohrSevenOaks;

@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 
 // CSS
-import styles from '../Cards/LaMarcaProsecco.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/JChardonnay.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// LAMARCA PROSECCO
-const LaMarcaProsecco = () => {
+// J CHARDONNAY
+const JChardonnay = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -34,28 +34,28 @@ const LaMarcaProsecco = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/lamarca_prosecco.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/j_chardonnay.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>La Marca Prosecco</h3>
+                                <h3>J Chardonnay</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>With its crisp and refreshing notes of green apple and citrus, La Marca's perfect for toasting during gatherings, brunches, or any joyous occasion. Cheers to making memories with La Marca Prosecco.</p>
+                                <p className={styles.skuDescription}>This wine is perfect for unwinding after a day's work or pairing with a delightful meal. Whether you're enjoying a quiet night in or celebrating small victories, J Chardonnay adds a touch of sophistication to your moment.</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Seafood<br />Pasta<br />Cake</h5>
+                                        <h5 className={styles.pairing}>Chicken<br />Risotto<br />Brie cheese</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Prosecco, Italy</h5>
+                                        <h5 className={styles.origin}>Healdsburg, CA</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Light<br />Acidic<br />Fizzy</h5>
+                                        <h5 className={styles.taste}>Bold<br />Dry<br />Soft</h5>
                                     </div>
                                 </div>
                             </div>
@@ -91,4 +91,4 @@ const LaMarcaProsecco = () => {
   );
 };
 
-export default LaMarcaProsecco;
+export default JChardonnay;
