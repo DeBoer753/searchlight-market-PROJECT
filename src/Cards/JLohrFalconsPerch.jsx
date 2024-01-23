@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 
 // CSS
-import styles from '../Cards/JLohrSevenOaks.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/JLohrFalconsPerch.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// J LOHR SEVEN OAKS
-const JLohrSevenOaks = () => {
+// J LOHR FALCONS PERCH
+const JLohrFalconsPerch = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -34,18 +34,18 @@ const JLohrSevenOaks = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/jlohr_seven_oaks.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/jlohr_falcons_perch.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>J. Lohr Seven Oaks Cabernet</h3>
+                                <h3>J. Lohr Falcons Perch Pinot Noir</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>J. Lohr Seven Oaks Cabernet is perfect for cozy evenings and social gatherings. With its rich aromas of black cherry and dark caramel, this full-bodied red wine elevates any moment. Enjoy its velvety profile during meals or special occasions.</p>
+                                <p className={styles.skuDescription}>Falcon's Perch Pinot Noir brings a touch of tranquility while looking out at the city lights from your window. Let the velvety textures and nuanced flavors turn everyday moments into memories within the comfort of your San Francisco abode.</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Steak<br />Beef stew<br />Grilled portobellos</h5>
+                                        <h5 className={styles.pairing}>Salmon<br />Mushroom risotto<br />Chocolate cake</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
@@ -55,7 +55,7 @@ const JLohrSevenOaks = () => {
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Bold<br />Dry<br />Tannic</h5>
+                                        <h5 className={styles.taste}>Light<br />Smooth<br />Acidic</h5>
                                     </div>
                                 </div>
                             </div>
@@ -91,4 +91,4 @@ const JLohrSevenOaks = () => {
   );
 };
 
-export default JLohrSevenOaks;
+export default JLohrFalconsPerch;

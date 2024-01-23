@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 
 // CSS
-import styles from '../Cards/JLohrSevenOaks.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/OZVzinfandel.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// J LOHR SEVEN OAKS
-const JLohrSevenOaks = () => {
+// OZV ZINFANDEL
+const OZVzinfandel = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -34,28 +34,28 @@ const JLohrSevenOaks = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/jlohr_seven_oaks.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/ozv_zinfandel.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>J. Lohr Seven Oaks Cabernet</h3>
+                                <h3>OZV Zinfandel</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>J. Lohr Seven Oaks Cabernet is perfect for cozy evenings and social gatherings. With its rich aromas of black cherry and dark caramel, this full-bodied red wine elevates any moment. Enjoy its velvety profile during meals or special occasions.</p>
+                                <p className={styles.skuDescription}>With OZV Zinfandel in hand, this delightful journey is not just about a bottle of wine; it's a sensory exploration, a pause to appreciate life's rich tapestry, one sip at a time.</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Steak<br />Beef stew<br />Grilled portobellos</h5>
+                                        <h5 className={styles.pairing}>Burger<br />Zucchini<br />Rosemary potatoes</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Paso Robles, CA</h5>
+                                        <h5 className={styles.origin}>Lodi, CA</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Bold<br />Dry<br />Tannic</h5>
+                                        <h5 className={styles.taste}>Bold<br />Sweet<br />Soft</h5>
                                     </div>
                                 </div>
                             </div>
@@ -91,4 +91,4 @@ const JLohrSevenOaks = () => {
   );
 };
 
-export default JLohrSevenOaks;
+export default OZVzinfandel;

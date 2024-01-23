@@ -45,7 +45,7 @@ const JChardonnay = () => {
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Chicken<br />Risotto<br />Brie cheese</h5>
+                                        <h5 className={styles.pairing}>Roasted chicken<br />Risotto<br />Brie cheese</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
@@ -72,7 +72,7 @@ const JChardonnay = () => {
                             <h2>SEARCHLIGHT MARKET</h2>
 
                             <h3>Hello, and welcome to Searchlight Market! My name is Myles and I am a full time sales rep / web developer hobbyist who created the card you are seeing now.</h3>
-                            <h3>My goal is to help grow not only our portfolio of wines, beers, and spirits, but more importantly to grow the independent retail shops we know and love in the Bay Area through digital perspective.</h3>
+                            <h3>My goal is to help grow not only our portfolio of wines, beers, and spirits, but more importantly to grow the independent retail shops we know and love here in San Francisco through a digital perspective.</h3>
                             <img src={process.env.PUBLIC_URL + '/imgs/message-icon.png'} alt="" />
                             <h3>Searchlight Market is ran by an incredible team who are always there to help their customers. If you have any questions, feel free to reach out to anyone on the floor!</h3>
                             <img src={process.env.PUBLIC_URL + '/imgs/events-icon.png'} alt="" />
