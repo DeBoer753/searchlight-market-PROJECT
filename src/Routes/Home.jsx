@@ -18,6 +18,7 @@ const Home = () => {
         <Link to='/jlohr-falcons-perch'>J. Lohr Falcons Perch Pinot Noir</Link>
         <Link to='/whitehaven-sb'>Whitehaven Sauvignon Blanc</Link>
         <Link to='/ozv-zinfandel'>OZV Zinfandel</Link>
+        <Link to='/domaine-drouhin-pinot'>Domaine Drouhin Pinot Noir</Link>
     </div>
   );
 };

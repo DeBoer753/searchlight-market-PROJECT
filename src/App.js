@@ -12,6 +12,7 @@ import JLohrSevenOaks from './Cards/JLohrSevenOaks'
 import JLohrFalconsPerch from './Cards/JLohrFalconsPerch'
 import WhitehavenSB from './Cards/WhitehavenSB'
 import OZVzinfandel from './Cards/OZVzinfandel'
+import DomaineDrouhinPinot from './Cards/DomaineDrouhinPinot';
 
 // CSS
 import './App.css';
@@ -30,6 +31,7 @@ const App = () => {
           <Route path='/jlohr-falcons-perch' element={<JLohrFalconsPerch />}/>
           <Route path='/whitehaven-sb' element={<WhitehavenSB />}/>
           <Route path='/ozv-zinfandel' element={<OZVzinfandel />}/>
+          <Route path='/domaine-drouhin-pinot' element={<DomaineDrouhinPinot />}/>
         </Routes>
       </BrowserRouter>
     </div>
