@@ -1,14 +1,14 @@
 // REACT
 import React, { useState } from 'react';
 
-// DATA
+// DATA 
 import { message } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/JChardonnay.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/JCuvee20.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// J CHARDONNAY
-const JChardonnay = () => {
+// CARD
+const JCuvee20 = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -37,18 +37,18 @@ const JChardonnay = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/j_chardonnay.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/j_cuvee20.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>J Vineyards Chardonnay</h3>
+                                <h3>J Vineyards Cuvée 20 Brut</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>This wine is perfect for unwinding after a day's work or pairing with a delightful meal. Whether you're enjoying a quiet night in or celebrating small victories, J Chardonnay adds a touch of sophistication to your moment.</p>
+                                <p className={styles.skuDescription}>J Cuvée 20 Brut opens with nuanced aromas of toasted almond, followed by notes of Braeburn apple, dried cranberry and ginger snap. Delicate bubbles leads to a soft palate with flavors of lemon meringue pie, as the wine’s creaminess is whisked away by a lively finish.</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Roasted chicken<br />Risotto<br />Brie cheese</h5>
+                                        <h5 className={styles.pairing}>Shrimp cocktail<br />Citrus arugala salad<br />Chicken skewers</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
@@ -58,7 +58,7 @@ const JChardonnay = () => {
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Bold<br />Dry<br />Soft</h5>
+                                        <h5 className={styles.taste}>Bold<br />Acidic<br />Fizzy</h5>
                                     </div>
                                 </div>
                             </div>
@@ -94,4 +94,4 @@ const JChardonnay = () => {
   );
 };
 
-export default JChardonnay;
+export default JCuvee20;

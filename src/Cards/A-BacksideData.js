@@ -1,0 +1,3 @@
+// DATA
+// export const message = "Searchlight Market is ran by an incredible team who are always there to help their customers. If you have any questions, feel free to reach out to anyone on the floor!"
+export const message = '"All of us at Searchlight Market are committed to provide the very best service and advice on wines, beers, spirts, and any other store items for your needs. If you have any questions, we are here to help!"'

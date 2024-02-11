@@ -1,14 +1,14 @@
 // REACT
 import React, { useState } from 'react';
 
-// DATA
+// DATA 
 import { message } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/JChardonnay.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/DryCreekCabernet.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// J CHARDONNAY
-const JChardonnay = () => {
+// CARD
+const DryCreekCabernet = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -37,18 +37,18 @@ const JChardonnay = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/j_chardonnay.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/dry_creek_cab.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>J Vineyards Chardonnay</h3>
+                                <h3>Dry Creek Vineyard Cabernet</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>This wine is perfect for unwinding after a day's work or pairing with a delightful meal. Whether you're enjoying a quiet night in or celebrating small victories, J Chardonnay adds a touch of sophistication to your moment.</p>
+                                <p className={styles.skuDescription}>This lush and elegant Cabernet Sauvignon initially displays aromas of plum, cranberry, and black truffle, followed by nutmeg, black pepper and thyme. A first taste of the full-bodied wine reveals flavors of black cherry, black currant and espresso.</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Roasted chicken<br />Risotto<br />Brie cheese</h5>
+                                        <h5 className={styles.pairing}>Steak<br />Mushroom risotto<br />Aged cheddar</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
@@ -58,7 +58,7 @@ const JChardonnay = () => {
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Bold<br />Dry<br />Soft</h5>
+                                        <h5 className={styles.taste}>Bold / Soft<br />Tannic<br />Dry</h5>
                                     </div>
                                 </div>
                             </div>
@@ -94,4 +94,4 @@ const JChardonnay = () => {
   );
 };
 
-export default JChardonnay;
+export default DryCreekCabernet;
