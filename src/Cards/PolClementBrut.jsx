@@ -41,7 +41,7 @@ const PolClementBrut = () => {
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Dry Creek Vineyard Zinfandel</h3>
+                                <h3>Pol Clément Brut (Blanc de Blancs)</h3>
                                 <p className={styles.description}>Description</p>
                                 <p className={styles.skuDescription}>Pol Clement Brut Blanc de Blancs is when quality meets affordability in every bubble. This sparkling wine is your wallet-friendly ticket to elegance, delivering a delightful balance of fine taste and smart spending. Cheers to affordable sophistication!</p>
                                 <div className={styles.miniBoxContainer}>
