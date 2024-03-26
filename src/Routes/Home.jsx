@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div className='home-container'>
       <h1>Searchlight Market</h1>
+        {/* WINE */}
         <Link to='/la-marca-prosecco'>La Marca Prosecco</Link>
         <Link to='/j-chardonnay'>J Chardonnay</Link>
         <Link to='/j-pinot'>J Pinot</Link>
@@ -33,6 +34,12 @@ const Home = () => {
         <Link to='/dry-creek-cab'>Dry Creek Cabernet</Link>
         <Link to='/dry-creek-zin'>Dry Creek Zinfandel</Link>
         <Link to='/pol-clement-brut'>Pol Clement Brut</Link>
+
+        {/* BEER */}
+        <Link to='/offshoot-relax'>Offshoot Relax</Link>
+        <Link to='/coronado-weekend'>Coronado Weekend</Link>
+        <Link to='/almanac-sournova'>Almanac Sournova</Link>
+        <Link to='/almanac-love'>Almanac Love</Link>
     </div>
   );
 };

@@ -28,6 +28,11 @@ import DryCreekCabernet from './Cards/DryCreekCabernet';
 import DryCreekZin from './Cards/DryCreekZin';
 import PolClementBrut from './Cards/PolClementBrut';
 
+import OffshootRelax from './Cards/OffshootRelax';
+import CoronadoWeekend from './Cards/CoronadoWeekend';
+import AlmanacSournova from './Cards/AlmanacSournova';
+import AlmanacLove from './Cards/AlmanacLove';
+
 // CSS
 import './App.css';
 
@@ -37,6 +42,7 @@ const App = () => {
     <div className='app-container'>
       <BrowserRouter>
         <Routes>
+          {/* WINE */}
           <Route index element={<Home />} />
           <Route path='/' element={<Home />}/>
           <Route path='/la-marca-prosecco' element={<LaMarcaProsecco />}/>
@@ -60,6 +66,12 @@ const App = () => {
           <Route path='/dry-creek-cab' element={<DryCreekCabernet />}/>
           <Route path='/dry-creek-zin' element={< DryCreekZin/>}/>
           <Route path='/pol-clement-brut' element={< PolClementBrut/>}/>
+
+          {/* BEER */}
+          <Route path='/offshoot-relax' element={< OffshootRelax/>}/>
+          <Route path='/coronado-weekend' element={< CoronadoWeekend/>}/>
+          <Route path='/almanac-sournova' element={< AlmanacSournova/>}/>
+          <Route path='/almanac-love' element={< AlmanacLove/>}/>
         </Routes>
       </BrowserRouter>
     </div>
