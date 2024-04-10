@@ -1,0 +1,21 @@
+/* This pagve used to be traditional css style. example Home.css instead of module and the .home-container instead of .homeContainer AND you didnt have overflow: scroll before. */
+
+.homeContainer {
+    background-color: rgb(81, 81, 81);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: scroll;
+}
+.homeContainer h1 {
+    margin-top: 0;
+    padding-top: 10px;
+    color: white;
+}
+a {
+    font-weight: bold;
+    color: gold;
+    font-size: 13px;
+}

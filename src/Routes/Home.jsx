@@ -5,12 +5,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // CSS
-import './Home.css';
+import styles from './Home.module.css';
 
 // HOME
 const Home = () => {
   return (
-    <div className='home-container'>
+    <div className={styles.homeContainer}>
       <h1>Searchlight Market</h1>
         {/* WINE */}
         <Link to='/la-marca-prosecco'>La Marca Prosecco</Link>
@@ -39,7 +39,13 @@ const Home = () => {
         <Link to='/offshoot-relax'>Offshoot Relax</Link>
         <Link to='/coronado-weekend'>Coronado Weekend</Link>
         <Link to='/almanac-sournova'>Almanac Sournova</Link>
+        <Link to='/almanac-twilight'>Almanac Twilight</Link>
         <Link to='/almanac-love'>Almanac Love</Link>
+        <Link to='/almanac-kolsch'>Almanac Kolsch</Link>
+        <Link to='/avbc-pilsner'>AVBC Pilsner</Link>
+        <Link to='/avbc-black-light'>AVBC Black Light</Link>
+        <Link to='/avbc-coastal'>AVBC Coastal</Link>
+        
     </div>
   );
 };

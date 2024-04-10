@@ -31,7 +31,12 @@ import PolClementBrut from './Cards/PolClementBrut';
 import OffshootRelax from './Cards/OffshootRelax';
 import CoronadoWeekend from './Cards/CoronadoWeekend';
 import AlmanacSournova from './Cards/AlmanacSournova';
+import AlmanacTwilight from './Cards/AlmanacTwilight';
 import AlmanacLove from './Cards/AlmanacLove';
+import AlmanacKolsch from './Cards/AlmanacKolsch';
+import AVBCPilsner from './Cards/AVBCPilsner';
+import AVBCBlackLight from './Cards/AVBCBlackLight';
+import AVBCCoastal from './Cards/AVBCCoastal';
 
 // CSS
 import './App.css';
@@ -71,7 +76,12 @@ const App = () => {
           <Route path='/offshoot-relax' element={< OffshootRelax/>}/>
           <Route path='/coronado-weekend' element={< CoronadoWeekend/>}/>
           <Route path='/almanac-sournova' element={< AlmanacSournova/>}/>
+          <Route path='/almanac-twilight' element={< AlmanacTwilight/>}/>
           <Route path='/almanac-love' element={< AlmanacLove/>}/>
+          <Route path='/almanac-kolsch' element={< AlmanacKolsch/>}/>
+          <Route path='/avbc-pilsner' element={< AVBCPilsner />}/>
+          <Route path='/avbc-black-light' element={< AVBCBlackLight />}/>
+          <Route path='/avbc-coastal' element={< AVBCCoastal />}/>
         </Routes>
       </BrowserRouter>
     </div>
