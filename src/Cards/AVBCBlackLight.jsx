@@ -37,7 +37,7 @@ const AVBCBlackLight = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/almanac_love.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/avbc_blacklight.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>

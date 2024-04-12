@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import { message } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/AVBCCoastal.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/CoronadoSaltyCrew.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
 // CARD
-const AVBCCoastal = () => {
+const CoronadoSaltyCrew = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -37,28 +37,28 @@ const AVBCCoastal = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/avbc_coastal.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/coronado_saltycrew.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Anderson Valley Coastal Ale</h3>
+                                <h3>Salty Crew Blonde Ale</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>In partnership with the Surfrider Foundation, AVBC donates 5% of the gross profit from packaged sales of this beer to directly support their mission to protect the ocean, waves and beaches for all.</p>
+                                <p className={styles.skuDescription}>What's a boat beer? It’s a canned beer that’s crisp, versatile and refreshing. It’s the perfect blank slate. Throw a lime in, make it bloody or spice the rim.  Whether you’re on or off the boat, this beer will take you back to days spent finding refuge in the sea.</p>
                                 <div className={styles.miniBoxContainer}> 
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Fish tacos<br />Smolked salmon<br />Brie cheese</h5>
+                                        <h5 className={styles.pairing}>Grilled meats<br />Buffalo wings<br />Turkey sandwhich</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Boonville, CA</h5>
+                                        <h5 className={styles.origin}>San Diego, CA</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Light<br />Smooth<br />Juicy / Fruity</h5>
+                                        <h5 className={styles.taste}>Crisp<br />Light hop<br />Dry</h5>
                                     </div>
                                 </div>
                             </div>
@@ -93,4 +93,4 @@ const AVBCCoastal = () => {
   );
 };
 
-export default AVBCCoastal;
+export default CoronadoSaltyCrew;

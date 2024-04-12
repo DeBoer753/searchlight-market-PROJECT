@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import { message } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/AVBCCoastal.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/GsWildOne.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
 // CARD
-const AVBCCoastal = () => {
+const GsWildOne = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -37,28 +37,28 @@ const AVBCCoastal = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/avbc_coastal.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/gs_wildone.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Anderson Valley Coastal Ale</h3>
+                                <h3>Gs Hard Ginger Beer Wild One</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>In partnership with the Surfrider Foundation, AVBC donates 5% of the gross profit from packaged sales of this beer to directly support their mission to protect the ocean, waves and beaches for all.</p>
+                                <p className={styles.skuDescription}>G's Hard Ginger Beer's "Wild One" is organic, gluten-free, and has no added sugars or artificial sweeteners. Crafted with hand-selected ginger, it delivers a bold kick of flavor! Plus, it's plant-based and woman-owned, embodying values of sustainability and empowerment.</p>
                                 <div className={styles.miniBoxContainer}> 
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Fish tacos<br />Smolked salmon<br />Brie cheese</h5>
+                                        <h5 className={styles.pairing}>Grilled eggplant<br />Salmon<br />Summer salad</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Boonville, CA</h5>
+                                        <h5 className={styles.origin}>Syndey, AUS</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Light<br />Smooth<br />Juicy / Fruity</h5>
+                                        <h5 className={styles.taste}>Dry<br />Subtle spice<br />Minty / Lime</h5>
                                     </div>
                                 </div>
                             </div>
@@ -93,4 +93,4 @@ const AVBCCoastal = () => {
   );
 };
 
-export default AVBCCoastal;
+export default GsWildOne;

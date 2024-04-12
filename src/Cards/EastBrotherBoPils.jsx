@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import { message } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/AVBCCoastal.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/EastBrotherBoPils.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
 // CARD
-const AVBCCoastal = () => {
+const EastBrotherBoPils = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -37,28 +37,28 @@ const AVBCCoastal = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/avbc_coastal.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/eastbrother_bopils.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Anderson Valley Coastal Ale</h3>
+                                <h3>East Brother Bo Pils</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>In partnership with the Surfrider Foundation, AVBC donates 5% of the gross profit from packaged sales of this beer to directly support their mission to protect the ocean, waves and beaches for all.</p>
+                                <p className={styles.skuDescription}>The best time to enjoy an East Brother Bo Pils is whenever you crave a crisp and refreshing beer experience. Whether it's a sunny afternoon barbecue, a leisurely weekend brunch, or simply unwinding after a long day, this classic pilsner is the perfect companion.</p>
                                 <div className={styles.miniBoxContainer}> 
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Fish tacos<br />Smolked salmon<br />Brie cheese</h5>
+                                        <h5 className={styles.pairing}>Sausages<br />Roasted chicken<br />Cucumber salad</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Boonville, CA</h5>
+                                        <h5 className={styles.origin}>Richmond, CA</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Light<br />Smooth<br />Juicy / Fruity</h5>
+                                        <h5 className={styles.taste}>Light<br />Crisp<br />Grainy</h5>
                                     </div>
                                 </div>
                             </div>
@@ -93,4 +93,4 @@ const AVBCCoastal = () => {
   );
 };
 
-export default AVBCCoastal;
+export default EastBrotherBoPils;

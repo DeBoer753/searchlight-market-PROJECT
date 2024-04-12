@@ -36,8 +36,10 @@ const Home = () => {
         <Link to='/pol-clement-brut'>Pol Clement Brut</Link>
 
         {/* BEER */}
+        <Link to='/eastbrother-bopils'>East Brother Bo Pils</Link>
         <Link to='/offshoot-relax'>Offshoot Relax</Link>
         <Link to='/coronado-weekend'>Coronado Weekend</Link>
+        <Link to='/coronado-saltycrew'>Coronado Salty Crew</Link>
         <Link to='/almanac-sournova'>Almanac Sournova</Link>
         <Link to='/almanac-twilight'>Almanac Twilight</Link>
         <Link to='/almanac-love'>Almanac Love</Link>
@@ -45,6 +47,7 @@ const Home = () => {
         <Link to='/avbc-pilsner'>AVBC Pilsner</Link>
         <Link to='/avbc-black-light'>AVBC Black Light</Link>
         <Link to='/avbc-coastal'>AVBC Coastal</Link>
+        <Link to='/gs-wildone'>Gs Wild One</Link>
         
     </div>
   );
