@@ -52,6 +52,7 @@ const Home = () => {
         <Link to='/kyla-coco'>Kyla Coconut</Link>
         <Link to='/kyla-lychee'>Kyla Lychee</Link>
         <Link to='/kyla-sunset'>Kyla Sunset Trio</Link>
+        <Link to='/sincere-apple'>Sincere Apple</Link>
         
     </div>
   );

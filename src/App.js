@@ -44,6 +44,7 @@ import KylaLavendar from './Cards/KylaLavendar';
 import KylaCoco from './Cards/KylaCoco';
 import KylaLychee from './Cards/KylaLychee';
 import KylaSunset from './Cards/KylaSunset';
+import SincereApple from './Cards/SincereApple';
 
 // CSS
 import './App.css';
@@ -96,6 +97,7 @@ const App = () => {
           <Route path='/kyla-coco' element={< KylaCoco />}/>
           <Route path='/kyla-lychee' element={< KylaLychee />}/>
           <Route path='/kyla-sunset' element={< KylaSunset />}/>
+          <Route path='/sincere-apple' element={< SincereApple />}/>
         </Routes>
       </BrowserRouter>
     </div>
