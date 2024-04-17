@@ -40,6 +40,10 @@ import AVBCPilsner from './Cards/AVBCPilsner';
 import AVBCBlackLight from './Cards/AVBCBlackLight';
 import AVBCCoastal from './Cards/AVBCCoastal';
 import GsWildOne from './Cards/GsWildOne';
+import KylaLavendar from './Cards/KylaLavendar';
+import KylaCoco from './Cards/KylaCoco';
+import KylaLychee from './Cards/KylaLychee';
+import KylaSunset from './Cards/KylaSunset';
 
 // CSS
 import './App.css';
@@ -88,6 +92,10 @@ const App = () => {
           <Route path='/avbc-black-light' element={< AVBCBlackLight />}/>
           <Route path='/avbc-coastal' element={< AVBCCoastal />}/>
           <Route path='/gs-wildone' element={< GsWildOne />}/>
+          <Route path='/kyla-lavendar' element={< KylaLavendar />}/>
+          <Route path='/kyla-coco' element={< KylaCoco />}/>
+          <Route path='/kyla-lychee' element={< KylaLychee />}/>
+          <Route path='/kyla-sunset' element={< KylaSunset />}/>
         </Routes>
       </BrowserRouter>
     </div>

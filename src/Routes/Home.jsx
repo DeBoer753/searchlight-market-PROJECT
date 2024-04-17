@@ -48,6 +48,10 @@ const Home = () => {
         <Link to='/avbc-black-light'>AVBC Black Light</Link>
         <Link to='/avbc-coastal'>AVBC Coastal</Link>
         <Link to='/gs-wildone'>Gs Wild One</Link>
+        <Link to='/kyla-lavendar'>Kyla Lavendar</Link>
+        <Link to='/kyla-coco'>Kyla Coconut</Link>
+        <Link to='/kyla-lychee'>Kyla Lychee</Link>
+        <Link to='/kyla-sunset'>Kyla Sunset Trio</Link>
         
     </div>
   );
