@@ -2,7 +2,10 @@
 import React, { useState } from 'react';
 
 // DATA 
+import { description1 } from './A-BacksideData';
+import { description2 } from './A-BacksideData';
 import { message } from './A-BacksideData';
+import { rescanTheQRCodeFor } from './A-BacksideData';
 
 // CSS
 import styles from '../Cards/RattiDasti.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
