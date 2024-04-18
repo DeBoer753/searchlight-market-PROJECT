@@ -76,13 +76,12 @@ const JChardonnay = () => {
                         <div>
                             <h1>Welcome to</h1>
                             <h2>SEARCHLIGHT MARKET</h2>
-
-                            <h3>Hello, and welcome to Searchlight Market! My name is Myles and I am a full time sales rep / web developer hobbyist who created the card you are seeing now.</h3>
-                            <h3>My goal is to help grow not only our portfolio of wines, beers, and spirits, but more importantly to grow the independent retail shops we know and love here in San Francisco through a digital perspective.</h3>
+                            <h3>{description1}</h3>
+                            <h3>{description2}</h3>
                             <img src={process.env.PUBLIC_URL + '/imgs/message-icon.png'} alt="" />
                             <h3 style={{ fontStyle: 'italic' }}>{message}</h3>
                             <img src={process.env.PUBLIC_URL + '/imgs/events-icon.png'} alt="" />
-                            <h3 className={styles.rescan}>Rescan the QR codes during holidays and public events for updated themes and messages!</h3>
+                            <h3 className={styles.rescan}>{rescanTheQRCodeFor}</h3>
                         </div>
                     </div>
 
