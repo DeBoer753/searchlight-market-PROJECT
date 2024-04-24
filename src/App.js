@@ -27,7 +27,7 @@ import JLohrBayMist from './Cards/JLohrBayMist';
 import DryCreekCabernet from './Cards/DryCreekCabernet';
 import DryCreekZin from './Cards/DryCreekZin';
 import PolClementBrut from './Cards/PolClementBrut';
-
+import DeliriumTremens from './Cards/DeliriumTremens';
 import EastBrotherBoPils from './Cards/EastBrotherBoPils';
 import OffshootRelax from './Cards/OffshootRelax';
 import CoronadoWeekend from './Cards/CoronadoWeekend';
@@ -36,6 +36,7 @@ import AlmanacSournova from './Cards/AlmanacSournova';
 import AlmanacTwilight from './Cards/AlmanacTwilight';
 import AlmanacLove from './Cards/AlmanacLove';
 import AlmanacKolsch from './Cards/AlmanacKolsch';
+import AlmanacSeasonal from './Cards/AlmanacSeasonal';
 import AVBCPilsner from './Cards/AVBCPilsner';
 import AVBCBlackLight from './Cards/AVBCBlackLight';
 import AVBCCoastal from './Cards/AVBCCoastal';
@@ -89,9 +90,11 @@ const App = () => {
           <Route path='/almanac-twilight' element={< AlmanacTwilight/>}/>
           <Route path='/almanac-love' element={< AlmanacLove/>}/>
           <Route path='/almanac-kolsch' element={< AlmanacKolsch/>}/>
+          <Route path='/almanac-seasonal' element={< AlmanacSeasonal/>}/>
           <Route path='/avbc-pilsner' element={< AVBCPilsner />}/>
           <Route path='/avbc-black-light' element={< AVBCBlackLight />}/>
           <Route path='/avbc-coastal' element={< AVBCCoastal />}/>
+          <Route path='/delirium-tremens' element={< DeliriumTremens />}/>
           <Route path='/gs-wildone' element={< GsWildOne />}/>
           <Route path='/kyla-lavendar' element={< KylaLavendar />}/>
           <Route path='/kyla-coco' element={< KylaCoco />}/>
