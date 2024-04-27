@@ -44,9 +44,9 @@ const AlmanacSeasonal = () => {
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Almanac Abnormal DIPA</h3>
+                                <h3>Almanac Future Is Fluid West Coast IPA</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>A quasar is a supermassive black hole feeding on cosmic energy. Pretty cool, right? So we wondered what kind of beer would pair well with all that cosmic energy. This is it, and we think we nailed it! Brewed with our psychonaut pals at Abnormal Beer Co. in San Diego, CA. </p>
+                                <p className={styles.skuDescription}>Brewed by the women of Almanac Beer in support of the Pink Boots Society, a nonprofit that creates training and educational opportunities for women working in beer! Cheers to a more inclusive, equitable, and fluid future.</p>
                                 <div className={styles.miniBoxContainer}> 
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
@@ -61,7 +61,7 @@ const AlmanacSeasonal = () => {
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Bold<br />Citrus<br />Dry finish</h5>
+                                        <h5 className={styles.taste}>Bold<br />Hop forward<br />Dry finish</h5>
                                     </div>
                                 </div>
                             </div>
