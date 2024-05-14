@@ -1,5 +1,5 @@
-# LINK URL (please note: Searchlight QR Card application is the only QR code app running. S and S grocery not yet hosted. Link works best on mobile )
-https://interactive-cards-slm.netlify.app/
+## LINK URL 
+https://interactive-cards-slm.netlify.app/ (please note: Searchlight QR Card application is the only QR code app running. S and S grocery not yet hosted. Link works best on mobile)
 
 ## Try scanning here! 
 ![Alt text](public/imgs/DryCreekVineyardCabernet.png)
