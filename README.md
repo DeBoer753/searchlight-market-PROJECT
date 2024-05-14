@@ -1,3 +1,10 @@
+# LINK URL (please note: Searchlight QR Card application is the only QR code app running. S and S grocery not yet hosted. Link works best on mobile )
+https://interactive-cards-slm.netlify.app/
+
+## Try scanning here! 
+![Alt text](public/imgs/DryCreekVineyardCabernet.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
