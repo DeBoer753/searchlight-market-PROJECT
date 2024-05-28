@@ -53,13 +53,13 @@
 /* FLIP CARD FRONT ---------------------------------------------------- CARD  */
 .flipCardFront {
     /* Holiday/Events Background: */
-    background-image: url('/public/imgs/backgrounds/test.png');
+    background-image: url('/public/imgs/backgrounds/avbc.png');
     background-size: cover; 
     background-position: 65% center; 
     padding-top: 0;
 
     /* Default Background: */
-    background: radial-gradient(circle, #ffffff, #74d2f7);
+    /* background: radial-gradient(circle, #ffffff, #74d2f7); */
     background-position: center -30px;
 
     margin-left: -4.2px; /* Fixes the margin of the flip */

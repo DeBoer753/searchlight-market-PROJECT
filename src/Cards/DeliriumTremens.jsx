@@ -56,7 +56,7 @@ const DeliriumTremens = () => {
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Melle, BE</h5>
+                                        <h5 className={styles.origin}>Melle, Belgium</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
