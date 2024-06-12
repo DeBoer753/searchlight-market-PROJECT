@@ -7,6 +7,12 @@ import Home from '../src/Routes/Home'
 
 // CARDS
 import LaMarcaProsecco from './Cards/LaMarcaProsecco';
+import CannonBallSB from './Cards/CannonBallSB';
+import EyzaguirreMerlot from './Cards/EyzaguirreMerlot'
+import EyzaguirreCab from './Cards/EyzaguirreCab'
+import LaPlayaSB from './Cards/LaPlayaSB'
+import LaPlayaViognier from './Cards/LaPlayaViognier'
+import LaPlayaChardonnay from './Cards/LaPlayaChardonnay'
 import JChardonnay from './Cards/JChardonnay';
 import JPinot from './Cards/JPinot';
 import JCuvee20 from './Cards/JCuvee20';
@@ -20,6 +26,8 @@ import RattiDasti from './Cards/RattiDasti';
 import OSAbstract from './Cards/OSAbstract';
 import LouisSonoma from './Cards/LouisSonoma';
 import OZVzinfandel from './Cards/OZVzinfandel'
+import MaggioPinot from './Cards/MaggioPinot'
+import MaggioSirah from './Cards/MaggioSirah'
 import DomaineDrouhinPinot from './Cards/DomaineDrouhinPinot';
 import JosephDrouhinMacon from './Cards/JosephDrouhinMacon';
 import JosephDrouhinChablis from './Cards/JosephDrouhinChablis';
@@ -60,6 +68,12 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path='/' element={<Home />}/>
           <Route path='/la-marca-prosecco' element={<LaMarcaProsecco />}/>
+          <Route path='/cannonball-sb' element={<CannonBallSB />}/>
+          <Route path='/eyzaguirre-merlot' element={<EyzaguirreMerlot />}/>
+          <Route path='/eyzaguirre-cab' element={<EyzaguirreCab />}/>
+          <Route path='/laplaya-sb' element={<LaPlayaSB />}/>
+          <Route path='/laplaya-viognier' element={<LaPlayaViognier />}/>
+          <Route path='/laplaya-chardonnay' element={<LaPlayaChardonnay />}/>
           <Route path='/j-chardonnay' element={<JChardonnay />}/>
           <Route path='/j-pinot' element={<JPinot />}/>
           <Route path='/j-cuvee20' element={<JCuvee20 />}/>
@@ -74,6 +88,8 @@ const App = () => {
           <Route path='/os-abstract' element={<OSAbstract />}/>
           <Route path='/louis-sonoma' element={<LouisSonoma />}/>
           <Route path='/ozv-zinfandel' element={<OZVzinfandel />}/>
+          <Route path='/maggio-pinot' element={<MaggioPinot />}/>
+          <Route path='/maggio-sirah' element={<MaggioSirah />}/>
           <Route path='/domaine-drouhin-pinot' element={<DomaineDrouhinPinot />}/>
           <Route path='/joseph-drouhin-macon' element={<JosephDrouhinMacon />}/>
           <Route path='/joseph-drouhin-chablis' element={<JosephDrouhinChablis />}/>

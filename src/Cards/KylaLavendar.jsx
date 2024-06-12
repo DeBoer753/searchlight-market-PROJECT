@@ -2,10 +2,7 @@
 import React, { useState } from 'react';
 
 // DATA
-import { description1 } from './A-BacksideData';
-import { description2 } from './A-BacksideData';
-import { message } from './A-BacksideData';
-import { rescanTheQRCodeFor } from './A-BacksideData';
+import { description1, storeName, description2, message, rescanTheQRCodeFor } from './A-BacksideData';
 
 // CSS
 import styles from '../Cards/KylaLavendar.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
@@ -75,7 +72,7 @@ const KylaLavendar = () => {
                     <div className={styles.flipCardBack}>
                         <div>
                             <h1>Welcome to</h1>
-                            <h2>SEARCHLIGHT MARKET</h2>
+                            <h2>{storeName}</h2>
                             <h3>{description1}</h3>
                             <h3>{description2}</h3>
                             <img src={process.env.PUBLIC_URL + '/imgs/message-icon.png'} alt="" />

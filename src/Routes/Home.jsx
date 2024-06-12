@@ -14,6 +14,12 @@ const Home = () => {
       <h1>Searchlight Market</h1>
         {/* WINE */}
         <Link to='/la-marca-prosecco'>La Marca Prosecco</Link>
+        <Link to='/cannonball-sb'>Cannonball Sauv Blanc</Link>
+        <Link to='/eyzaguirre-merlot'>Eyzaguirre Merlot</Link>
+        <Link to='/eyzaguirre-cab'>Eyzaguirre Cab</Link>
+        <Link to='/laplaya-sb'>La Playa Sauv Blanc</Link>
+        <Link to='/laplaya-viognier'>La Playa Viognier</Link>
+        <Link to='/laplaya-chardonnay'>La Playa Chardonnay</Link>
         <Link to='/j-chardonnay'>J Chardonnay</Link>
         <Link to='/j-pinot'>J Pinot</Link>
         <Link to='/j-cuvee20'>J Cuvee 20</Link>
@@ -28,6 +34,8 @@ const Home = () => {
         <Link to='/os-abstract'>Orin Swift Abstract </Link>
         <Link to='/louis-sonoma'>Louis M. Martini Sonoma Cabernet</Link>
         <Link to='/ozv-zinfandel'>OZV Zinfandel</Link>
+        <Link to='/maggio-pinot'>Maggio Pinot</Link>
+        <Link to='/maggio-sirah'>Maggio Petite Sirah</Link>
         <Link to='/domaine-drouhin-pinot'>Domaine Drouhin Pinot Noir</Link>
         <Link to='/joseph-drouhin-macon'>Joseph Drouhin Macon</Link>
         <Link to='/joseph-drouhin-chablis'>Joseph Drouhin Chablis</Link>
