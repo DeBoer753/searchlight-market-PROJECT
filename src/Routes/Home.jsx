@@ -14,6 +14,7 @@ const Home = () => {
       <h1>Searchlight Market</h1>
         {/* WINE */}
         <Link to='/la-marca-prosecco'>La Marca Prosecco</Link>
+        <Link to='/franciscan-chardonnay'>Franciscan Chardonnay</Link>
         <Link to='/cannonball-sb'>Cannonball Sauv Blanc</Link>
         <Link to='/eyzaguirre-merlot'>Eyzaguirre Merlot</Link>
         <Link to='/eyzaguirre-cab'>Eyzaguirre Cab</Link>
@@ -41,6 +42,8 @@ const Home = () => {
         <Link to='/joseph-drouhin-chablis'>Joseph Drouhin Chablis</Link>
         <Link to='/dry-creek-cab'>Dry Creek Cabernet</Link>
         <Link to='/dry-creek-zin'>Dry Creek Zinfandel</Link>
+        <Link to='/dry-creek-sb'>Dry Creek Sauv Blanc</Link>
+        <Link to='/dry-creek-fume'>Dry Creek Fume</Link>
         <Link to='/pol-clement-brut'>Pol Clement Brut</Link>
 
         {/* BEER */}

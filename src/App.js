@@ -7,6 +7,7 @@ import Home from '../src/Routes/Home'
 
 // CARDS
 import LaMarcaProsecco from './Cards/LaMarcaProsecco';
+import FranciscanChardonnay from './Cards/FranciscanChardonnay';
 import CannonBallSB from './Cards/CannonBallSB';
 import EyzaguirreMerlot from './Cards/EyzaguirreMerlot'
 import EyzaguirreCab from './Cards/EyzaguirreCab'
@@ -34,6 +35,8 @@ import JosephDrouhinChablis from './Cards/JosephDrouhinChablis';
 import JLohrBayMist from './Cards/JLohrBayMist';
 import DryCreekCabernet from './Cards/DryCreekCabernet';
 import DryCreekZin from './Cards/DryCreekZin';
+import DryCreekSB from './Cards/DryCreekSB';
+import DryCreekFume from './Cards/DryCreekFume';
 import PolClementBrut from './Cards/PolClementBrut';
 import DeliriumTremens from './Cards/DeliriumTremens';
 import EastBrotherBoPils from './Cards/EastBrotherBoPils';
@@ -68,6 +71,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path='/' element={<Home />}/>
           <Route path='/la-marca-prosecco' element={<LaMarcaProsecco />}/>
+          <Route path='/franciscan-chardonnay' element={<FranciscanChardonnay />}/>
           <Route path='/cannonball-sb' element={<CannonBallSB />}/>
           <Route path='/eyzaguirre-merlot' element={<EyzaguirreMerlot />}/>
           <Route path='/eyzaguirre-cab' element={<EyzaguirreCab />}/>
@@ -95,6 +99,8 @@ const App = () => {
           <Route path='/joseph-drouhin-chablis' element={<JosephDrouhinChablis />}/>
           <Route path='/dry-creek-cab' element={<DryCreekCabernet />}/>
           <Route path='/dry-creek-zin' element={< DryCreekZin/>}/>
+          <Route path='/dry-creek-sb' element={< DryCreekSB/>}/>
+          <Route path='/dry-creek-fume' element={< DryCreekFume/>}/>
           <Route path='/pol-clement-brut' element={< PolClementBrut/>}/>
 
           {/* BEER */}

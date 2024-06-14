@@ -2,7 +2,7 @@
 .mainContainer {
     /* overflow: hidden;  */
     height: 110vh;
-    /* background-color: ; */
+    /* background-color: #6e2600b9; */
     background-size: cover; /* Adjust to cover the entire container */
 }
 
@@ -53,13 +53,13 @@
 /* FLIP CARD FRONT ---------------------------------------------------- CARD  */
 .flipCardFront {
     /* Holiday/Events Background: */
-    background-image: url('/public/imgs/backgrounds/cannonball.png');
+    background-image: url('/public/imgs/backgrounds/franciscan.png');
     background-size: cover; 
     background-position: 65% center; 
     padding-top: 0;
 
     /* Default Background: */
-    /* background: radial-gradient(circle, #ffffff, #c8db52); */
+    /* background: radial-gradient(circle, #ffffff, #6e2600); */
     background-position: center -30px;
 
     margin-left: -4.2px; /* Fixes the margin of the flip */
@@ -78,7 +78,7 @@
     color: #ffffff;
 }
 .iconContainer {
-    background-color: #c8db52;
+    background-color: #6e2600;
     width: 60px;
     height: 60px;
     position: absolute;
@@ -104,7 +104,7 @@
     top: -20px;
 } */
 .flipCardFront .cardBottomHalf {
-    background-color: #c8db52;
+    background-color: #6e2600;
     border-top: 3px white solid;
     margin-top: 5px;
     overflow: hidden;
@@ -130,8 +130,10 @@
 }
 .flipCardFront h3 {
     margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: -10px;
-}
+} 
 .flipCardFront .description {
     color: white;
     text-align: left;
@@ -171,7 +173,7 @@
     margin-bottom: 3px;
 }
 .flipCardFront .miniBox1 {
-    background-color: #c8db52;
+    background-color: #6e2600;
     width: 100%;
     height: 75px;
 }
@@ -182,7 +184,7 @@
     margin-top: 0px;
 }
 .flipCardFront .miniBox2 {
-    background-color: #c8db52;
+    background-color: #6e2600;
     width: 100%;
     height: 75px;
     left: 0;
@@ -215,7 +217,8 @@
     font-style: italic;
 }
 .flipCardFront .miniBox3 {
-    background-color: #c8db52;
+    background-color: #6e2600;
+    border-radius: 10px;
     width: 100%;
     height: 75px;
 }
@@ -241,7 +244,7 @@
     transform: rotateY(180deg);
 }
 .flipCardBack div {
-    background-color: #c8db52;
+    background-color: #6e2600;
     border-radius: 5px;
     height: 500px;
 }

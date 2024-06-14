@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import { description1, storeName, description2, message, rescanTheQRCodeFor } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/CannonBallSB.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/FranciscanChardonnay.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// J LOHR SEVEN OAKS
-const CannonBallSB = () => {
+// CARD
+const DryCreekSB = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -17,7 +17,7 @@ const CannonBallSB = () => {
 
   return (
     <div className={styles.mainContainer}>
-        
+    
 
         <div className={styles.cardContainer}>
             <h1 className={styles.alert}>(Please return to vertical view)</h1>
@@ -37,34 +37,33 @@ const CannonBallSB = () => {
                                 </div>
                             </div>
                                 
-                            <img className={styles.bottle} src={process.env.PUBLIC_URL + '/imgs/skus/cannonball_sb.png'} alt="" />
+                            <img className={styles.bottle} src={process.env.PUBLIC_URL + '/imgs/skus/franciscan_chardonnay.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Cannonball Sauvignon Blanc</h3>
+                                <h3>Franciscan Chardonnay</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>This exceptional and affordable wine has garnered an impressive 94 points and has been honored with both gold and platinum awards in prestigious wine competitions. Its superb taste and quality make it a standout choice for any occasion.</p>
+                                <p className={styles.skuDescription}>A highly rated and approachable white wine grown in California. Hints of freshly sliced pineapple and lemon flower greet the nose. With no oak aging or malolactic fermentation, the wine feels refreshing on the palate with juicy notes of pear and apple.</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Lemon pasta<br />Asparagus<br />Chips and guacamole</h5>
-                                    </div>
+                                        <h5 className={styles.pairing}>Fettuccine alfredo<br />Pineapple chicken<br />Camembert cheese</h5>
+                                    </div> 
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Healdsburg, CA</h5>
+                                        <h5 className={styles.origin}>Soledad, CA</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Light / Bold<br />Dry<br />Acidic</h5>
+                                        <h5 className={styles.taste}>Bold<br />Dry / Sweet<br />Soft / Acidic</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>  
                     </div>
-
 
 
 
@@ -93,4 +92,4 @@ const CannonBallSB = () => {
   );
 };
 
-export default CannonBallSB;
+export default DryCreekSB;

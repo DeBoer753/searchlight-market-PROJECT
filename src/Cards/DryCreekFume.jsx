@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import { description1, storeName, description2, message, rescanTheQRCodeFor } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/CannonBallSB.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/DryCreekFume.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
-// J LOHR SEVEN OAKS
-const CannonBallSB = () => {
+// CARD
+const DryCreekSB = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -17,7 +17,7 @@ const CannonBallSB = () => {
 
   return (
     <div className={styles.mainContainer}>
-        
+    
 
         <div className={styles.cardContainer}>
             <h1 className={styles.alert}>(Please return to vertical view)</h1>
@@ -37,18 +37,18 @@ const CannonBallSB = () => {
                                 </div>
                             </div>
                                 
-                            <img className={styles.bottle} src={process.env.PUBLIC_URL + '/imgs/skus/cannonball_sb.png'} alt="" />
+                            <img className={styles.bottle} src={process.env.PUBLIC_URL + '/imgs/skus/drycreek_fume.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Cannonball Sauvignon Blanc</h3>
+                                <h3>Dry Creek Vineyard Fume Blanc</h3>
                                 <p className={styles.description}>Description</p>
-                                <p className={styles.skuDescription}>This exceptional and affordable wine has garnered an impressive 94 points and has been honored with both gold and platinum awards in prestigious wine competitions. Its superb taste and quality make it a standout choice for any occasion.</p>
+                                <p className={styles.skuDescription}>A wine at the heart and soul of the family Dry Creek Vineyard winery. Modeled after the classic wines from the Loire Valley in France, the wineries stainless steel fermented Fumé Blanc is crisp, balanced and immediately drinkable. What are your thoughts?</p>
                                 <div className={styles.miniBoxContainer}>
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Lemon pasta<br />Asparagus<br />Chips and guacamole</h5>
+                                        <h5 className={styles.pairing}>Grilled shrimp<br />Arugula salad<br />Roasted feta cheese</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
@@ -58,13 +58,12 @@ const CannonBallSB = () => {
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
                                         <hr />
-                                        <h5 className={styles.taste}>Light / Bold<br />Dry<br />Acidic</h5>
+                                        <h5 className={styles.taste}>Bold / Light<br />Dry<br />Acidic</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>  
                     </div>
-
 
 
 
@@ -93,4 +92,4 @@ const CannonBallSB = () => {
   );
 };
 
-export default CannonBallSB;
+export default DryCreekSB;
