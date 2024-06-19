@@ -15,6 +15,7 @@ const Home = () => {
         {/* WINE */}
         <Link to='/la-marca-prosecco'>La Marca Prosecco</Link>
         <Link to='/franciscan-chardonnay'>Franciscan Chardonnay</Link>
+        <Link to='/languageofyes-rose'>Language Of Yes Rose</Link>
         <Link to='/cannonball-sb'>Cannonball Sauv Blanc</Link>
         <Link to='/eyzaguirre-merlot'>Eyzaguirre Merlot</Link>
         <Link to='/eyzaguirre-cab'>Eyzaguirre Cab</Link>
@@ -26,6 +27,7 @@ const Home = () => {
         <Link to='/j-cuvee20'>J Cuvee 20</Link>
         <Link to='/j-brut-rose'>J Brut Rosé</Link>
         <Link to='/jlohr-seven-oaks-cabernet'>J. Lohr Seven Oaks Cabernet</Link>
+        <Link to='/jlohr-riverstone'>J. Lohr Riverstone</Link>
         <Link to='/jlohr-hilltop'>J. Lohr Hilltop Cabernet</Link>
         <Link to='/jlohr-falcons-perch'>J. Lohr Falcons Perch Pinot Noir</Link>
         <Link to='/jlohr-bay-mist'>J. Lohr Bay Mist Riesling</Link>
@@ -43,8 +45,10 @@ const Home = () => {
         <Link to='/dry-creek-cab'>Dry Creek Cabernet</Link>
         <Link to='/dry-creek-zin'>Dry Creek Zinfandel</Link>
         <Link to='/dry-creek-sb'>Dry Creek Sauv Blanc</Link>
+        <Link to='/dry-creek-chenin'>Dry Creek Chenin Blanc</Link>
         <Link to='/dry-creek-fume'>Dry Creek Fume</Link>
         <Link to='/pol-clement-brut'>Pol Clement Brut</Link>
+        <Link to='/raeburn-pinot'>Raeburn Pinot</Link>
 
         {/* BEER */}
         <Link to='/eastbrother-bopils'>East Brother Bo Pils</Link>

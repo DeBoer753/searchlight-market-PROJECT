@@ -1,0 +1,343 @@
+/* MAIN CONTAINER ---------------------------------------------------- MAIN CONTAINER */
+.mainContainer {
+    /* overflow: hidden;  */
+    height: 110vh;
+    /* background-color: #002e5bb9; */
+    background-size: cover; /* Adjust to cover the entire container */
+}
+
+/* CARD CONTAINER ---------------------------------------------------- CARD CONTAINER */
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -120px;
+    height: 120vh;
+}
+.alert {
+    display: none;
+    text-align: center;
+    position: absolute;
+    color: #878787;
+    margin-top: 60px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* FLIP CARD ---------------------------------------------------- FLIP CARD */
+.flipCard {
+    perspective: 2000px;
+    width: 325px;
+    height: 500px;
+    animation: floatUpDown 1.5s ease-in-out; 
+}
+/* IMPORTANT: if you seperate the '.' from flipCard and flipped, it wont work */
+.flipCard.flipped .flipCardInner {
+    transform: rotateY(180deg);
+}
+.flipCardInner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.flipCard::before {
+    content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+}
+  
+/* FLIP CARD FRONT ---------------------------------------------------- CARD  */
+.flipCardFront {
+    /* Holiday/Events Background: */
+    background-image: url('/public/imgs/backgrounds/drycreek.png');
+    background-size: cover; 
+    background-position: 65% center; 
+    padding-top: 0;
+
+    /* Default Background: */
+    /* background: radial-gradient(circle, #ffffff, #002e5b); */
+    background-position: center -30px;
+
+    margin-left: -4.2px; /* Fixes the margin of the flip */
+    width: 325px;
+    height: 500px;
+    border: 4px white solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    animation: floatUpDown 1.5s ease-in-out; 
+}
+.innerElement {
+    text-align: center;
+    color: #ffffff;
+}
+.iconContainer {
+    background-color: #002e5b;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 261px;
+    top: 0px;
+    border-top-right-radius: 5px; 
+    border-bottom-left-radius: 9px; 
+    border-left: 4px white solid;
+    border-bottom: 4px white solid;
+}
+.tapIcon {
+    width: 50px;
+    position: absolute;
+    left: 6px;
+    top: 38px;
+}
+.flipCardFront img {
+    width: 60%;
+    margin-top: -200px;
+}
+/* .flipCard .bottle {
+    position: relative;
+    top: -20px;
+} */
+.flipCardFront .cardBottomHalf {
+    background-color: #002e5b;
+    border-top: 3px white solid;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom-right-radius: 5px ;
+    border-bottom-left-radius: 5px;
+}
+.ofAge {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 6.5px;
+    font-style: italic;
+    font-weight: 600;
+}
+.flipCardFront h3 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: -10px;
+} 
+.flipCardFront .description {
+    color: white;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.flipCardFront .skuDescription {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    text-align: left;
+    border-radius: 8px;
+    color: white;
+}
+.flipCardFront .miniBoxContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.flipCardFront  h4 {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.flipCardFront hr {
+    border: 0.1px rgb(255, 255, 255) solid;
+    width: 50px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+.flipCardFront .miniBox1 {
+    background-color: #002e5b;
+    width: 100%;
+    height: 75px;
+}
+.flipCardFront .miniBox1 .pairing {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 0px;
+}
+.flipCardFront .miniBox2 {
+    background-color: #002e5b;
+    width: 100%;
+    height: 75px;
+    left: 0;
+}
+.flipCardFront .miniBox2 .origin {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 0px;
+}
+/* .flipCardFront .miniBox2 .score {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+.flipCardFront .miniBox2 span {
+    font-weight: bold;
+}
+.flipCardFront .miniBox2 h6 {
+    margin-top: 5px;
+    font-size: 8px;
+    font-weight: 500;
+    font-style: italic;
+}
+.flipCardFront .miniBox3 {
+    background-color: #002e5b;
+    border-radius: 10px;
+    width: 100%;
+    height: 75px;
+}
+.flipCardFront .miniBox3 .taste {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 0px;
+}
+
+/* FLIP CARD BACK ---------------------------------------------------- FLIP CARD BACK */
+.flipCardBack {
+    /* background-image: url('/public/imgs/bubbles.PNG'); */
+    background-size: cover; /* Adjust to cover the entire container */
+    background-position: 65% center; 
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    
+    border: 4px white solid;
+    margin-left: -2.9px; /* Fixes the margin of the flip */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+.flipCardBack div {
+    background-color: #002e5b;
+    border-radius: 5px;
+    height: 500px;
+}
+.flipCardBack h1 {
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+}
+.flipCardBack h2 {
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.flipCardBack hr {
+    border: 0.1px rgb(255, 255, 255) solid;
+    width: 150px;
+    margin-bottom: 3px;
+}
+.flipCardBack img {
+    width: 35px;
+    margin-left: 145px;
+}
+.flipCardBack h3 {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: 200;
+} 
+.flipCardBack .rescan {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* FLIP CARD FRONT AND BACK ---------------------------------------------------- FLIP CARD FRONT AND BACK */
+.flipCardFront,
+.flipCardBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* OPACITY FADE ---------------------------------------------------- OPACITY FADE */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        opacity: 1; /* Fade in to opacity 1 */
+    }
+}
+
+/* FLOAT UP ---------------------------------------------------- FLOAT UP */
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(70vh); /* Start below the screen */
+        opacity: 0;
+    }
+    45% {
+        transform: translateY(-2vh); /* Float above the middle of the screen */
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(0vh); /* Stay in the middle */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0); /* Remain at the middle */
+        opacity: 1;
+    }
+}
+
+/* LANDSCAPE MODE ---------------------------------------------------- LANDSCAPE MODE */
+@media screen and (orientation: landscape) {
+    .mainContainer {
+        background-color: rgba(58, 156, 221, 0);
+    }
+    .flipCardInner {
+      display: none; /* Hide the body in landscape mode */
+    }
+    .alert {
+        display: block;
+    }
+  }

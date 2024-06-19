@@ -8,6 +8,7 @@ import Home from '../src/Routes/Home'
 // CARDS
 import LaMarcaProsecco from './Cards/LaMarcaProsecco';
 import FranciscanChardonnay from './Cards/FranciscanChardonnay';
+import LanguageOfYesRose from './Cards/LanguageOfYesRose';
 import CannonBallSB from './Cards/CannonBallSB';
 import EyzaguirreMerlot from './Cards/EyzaguirreMerlot'
 import EyzaguirreCab from './Cards/EyzaguirreCab'
@@ -19,6 +20,7 @@ import JPinot from './Cards/JPinot';
 import JCuvee20 from './Cards/JCuvee20';
 import JBrutRose from './Cards/JBrutRose';
 import JLohrSevenOaks from './Cards/JLohrSevenOaks'
+import JLohrRiverstone from './Cards/JLohrRiverstone'
 import JLohrHilltop from './Cards/JLohrHilltop';
 import JLohrFalconsPerch from './Cards/JLohrFalconsPerch'
 import WhitehavenSB from './Cards/WhitehavenSB'
@@ -36,8 +38,10 @@ import JLohrBayMist from './Cards/JLohrBayMist';
 import DryCreekCabernet from './Cards/DryCreekCabernet';
 import DryCreekZin from './Cards/DryCreekZin';
 import DryCreekSB from './Cards/DryCreekSB';
+import DryCreekChenin from './Cards/DryCreekChenin';
 import DryCreekFume from './Cards/DryCreekFume';
 import PolClementBrut from './Cards/PolClementBrut';
+import RaeburnPinot from './Cards/RaeburnPinot';
 import DeliriumTremens from './Cards/DeliriumTremens';
 import EastBrotherBoPils from './Cards/EastBrotherBoPils';
 import OffshootRelax from './Cards/OffshootRelax';
@@ -72,6 +76,7 @@ const App = () => {
           <Route path='/' element={<Home />}/>
           <Route path='/la-marca-prosecco' element={<LaMarcaProsecco />}/>
           <Route path='/franciscan-chardonnay' element={<FranciscanChardonnay />}/>
+          <Route path='/languageofyes-rose' element={<LanguageOfYesRose />}/>
           <Route path='/cannonball-sb' element={<CannonBallSB />}/>
           <Route path='/eyzaguirre-merlot' element={<EyzaguirreMerlot />}/>
           <Route path='/eyzaguirre-cab' element={<EyzaguirreCab />}/>
@@ -83,6 +88,7 @@ const App = () => {
           <Route path='/j-cuvee20' element={<JCuvee20 />}/>
           <Route path='/j-brut-rose' element={<JBrutRose />}/>
           <Route path='/jlohr-seven-oaks-cabernet' element={<JLohrSevenOaks />}/>
+          <Route path='/jlohr-riverstone' element={<JLohrRiverstone />}/>
           <Route path='/jlohr-hilltop' element={<JLohrHilltop />}/>
           <Route path='/jlohr-falcons-perch' element={<JLohrFalconsPerch />}/>
           <Route path='/jlohr-bay-mist' element={<JLohrBayMist />}/>
@@ -100,8 +106,10 @@ const App = () => {
           <Route path='/dry-creek-cab' element={<DryCreekCabernet />}/>
           <Route path='/dry-creek-zin' element={< DryCreekZin/>}/>
           <Route path='/dry-creek-sb' element={< DryCreekSB/>}/>
+          <Route path='/dry-creek-chenin' element={< DryCreekChenin/>}/>
           <Route path='/dry-creek-fume' element={< DryCreekFume/>}/>
           <Route path='/pol-clement-brut' element={< PolClementBrut/>}/>
+          <Route path='/raeburn-pinot' element={< RaeburnPinot/>}/>
 
           {/* BEER */}
           <Route path='/eastbrother-bopils' element={< EastBrotherBoPils/>}/>
