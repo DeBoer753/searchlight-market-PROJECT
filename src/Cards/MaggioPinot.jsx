@@ -48,7 +48,7 @@ const MaggioPinot = () => {
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Chicken Ceasar<br />Beef<br />Feta cheese</h5>
+                                        <h5 className={styles.pairing}>Chicken Caesar<br />Beef<br />Feta cheese</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>

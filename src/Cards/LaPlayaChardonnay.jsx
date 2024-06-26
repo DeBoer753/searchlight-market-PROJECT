@@ -48,7 +48,7 @@ const LaPlayaSB = () => {
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Pork / Salmon<br />Ceasar salad<br />Goat / Havarti cheese</h5>
+                                        <h5 className={styles.pairing}>Pork / Salmon<br />Caesar salad<br />Goat / Havarti cheese</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>

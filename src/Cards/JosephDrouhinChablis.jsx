@@ -48,7 +48,7 @@ const JosephDrouhinChablis = () => {
                                     <div className={styles.miniBox1}>
                                         <h4>Pairing</h4> 
                                         <hr />
-                                        <h5 className={styles.pairing}>Lemon chicken<br />Ceasar salad<br />Shrimp</h5>
+                                        <h5 className={styles.pairing}>Lemon chicken<br />Caesar salad<br />Shrimp</h5>
                                     </div>
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
