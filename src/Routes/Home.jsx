@@ -35,6 +35,7 @@ const Home = () => {
         <Link to='/williamhill-ca-sb'>William Hill Sauvignon Blanc</Link>
         <Link to='/ratti-dasti'>Ratti Barbera D'Asti</Link>
         <Link to='/os-abstract'>Orin Swift Abstract </Link>
+        <Link to='/os-machete'>Orin Swift Machete </Link>
         <Link to='/louis-sonoma'>Louis M. Martini Sonoma Cabernet</Link>
         <Link to='/ozv-zinfandel'>OZV Zinfandel</Link>
         <Link to='/maggio-pinot'>Maggio Pinot</Link>
