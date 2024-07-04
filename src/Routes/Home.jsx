@@ -71,6 +71,11 @@ const Home = () => {
         <Link to='/kyla-lychee'>Kyla Lychee</Link>
         <Link to='/kyla-sunset'>Kyla Sunset Trio</Link>
         <Link to='/sincere-apple'>Sincere Apple</Link>
+        <Link to='/uinta-hopnosh'>Uinta Hop Nosh</Link>
+        <Link to='/uinta-cleardaze'>Uinta Clear Daze</Link>
+        <Link to='/brewdog-hazy-na'>Brew Dog Hazy NA</Link>
+        <Link to='/glutenberg-ipa'>Glutenberg IPA</Link>
+        <Link to='/glutenberg-paleale'>Glutenberg Pale Ale</Link>
         
     </div>
   );

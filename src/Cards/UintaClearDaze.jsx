@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import { description1, storeName, description2, message, rescanTheQRCodeFor } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/UintaHopNosh.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/UintaClearDaze.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
 // CARD
-const UintaHopNosh = () => {
+const UintaClearDaze = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -37,11 +37,11 @@ const UintaHopNosh = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/uinta_hopnosh.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/uinta_cleardaze.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Uinta Hop Nosh IPA</h3>
+                                <h3>Uinta Clear Daze</h3>
                                 <p className={styles.description}>Description</p>
                                 <p className={styles.skuDescription}>______</p>
                                 <div className={styles.miniBoxContainer}> 
@@ -93,4 +93,4 @@ const UintaHopNosh = () => {
   );
 };
 
-export default UintaHopNosh;
+export default UintaClearDaze;

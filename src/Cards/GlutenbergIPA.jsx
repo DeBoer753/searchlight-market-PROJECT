@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import { description1, storeName, description2, message, rescanTheQRCodeFor } from './A-BacksideData';
 
 // CSS
-import styles from '../Cards/UintaHopNosh.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
+import styles from '../Cards/GlutenbergIPA.module.css'; // Make sure to create a CSS file (e.g., FlipCard.css) for styling
 
 // CARD
-const UintaHopNosh = () => {
+const GlutenbergIPA = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -37,11 +37,11 @@ const UintaHopNosh = () => {
                                 </div>
                             </div>
                                 
-                            <img src={process.env.PUBLIC_URL + '/imgs/skus/uinta_hopnosh.png'} alt="" />
+                            <img src={process.env.PUBLIC_URL + '/imgs/skus/glutenberg_ipa.png'} alt="" />
                             
                             <div className={styles.cardBottomHalf}>
                                 <h5 className={styles.ofAge}>• Must be 21 years or older to purchase •</h5>
-                                <h3>Uinta Hop Nosh IPA</h3>
+                                <h3>Glutenberg IPA</h3>
                                 <p className={styles.description}>Description</p>
                                 <p className={styles.skuDescription}>______</p>
                                 <div className={styles.miniBoxContainer}> 
@@ -53,7 +53,7 @@ const UintaHopNosh = () => {
                                     <div className={styles.miniBox2}>
                                         <h4>Origin</h4>
                                         <hr />
-                                        <h5 className={styles.origin}>Salt Lake City, UT</h5>
+                                        <h5 className={styles.origin}>Montreal, CAN</h5>
                                     </div>
                                     <div className={styles.miniBox3}>
                                         <h4>Taste</h4>
@@ -64,7 +64,6 @@ const UintaHopNosh = () => {
                             </div>
                         </div>  
                     </div>
-
 
 
 
@@ -93,4 +92,4 @@ const UintaHopNosh = () => {
   );
 };
 
-export default UintaHopNosh;
+export default GlutenbergIPA;

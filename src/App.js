@@ -62,6 +62,11 @@ import KylaCoco from './Cards/KylaCoco';
 import KylaLychee from './Cards/KylaLychee';
 import KylaSunset from './Cards/KylaSunset';
 import SincereApple from './Cards/SincereApple';
+import UintaHopNosh from './Cards/UintaHopNosh';
+import UintaClearDaze from './Cards/UintaClearDaze';
+import BrewdogHazyNA from './Cards/BrewdogHazyNA';
+import GlutenbergIPA from './Cards/GlutenbergIPA';
+import GlutenbergPaleAle from './Cards/GlutenbergPaleAle';
 
 // CSS
 import './App.css';
@@ -133,6 +138,11 @@ const App = () => {
           <Route path='/kyla-lychee' element={< KylaLychee />}/>
           <Route path='/kyla-sunset' element={< KylaSunset />}/>
           <Route path='/sincere-apple' element={< SincereApple />}/>
+          <Route path='/uinta-hopnosh' element={< UintaHopNosh />}/>
+          <Route path='/uinta-cleardaze' element={< UintaClearDaze />}/>
+          <Route path='/brewdog-hazy-na' element={< BrewdogHazyNA />}/>
+          <Route path='/glutenberg-ipa' element={< GlutenbergIPA />}/>
+          <Route path='/glutenberg-paleale' element={< GlutenbergPaleAle />}/>
         </Routes>
       </BrowserRouter>
     </div>
