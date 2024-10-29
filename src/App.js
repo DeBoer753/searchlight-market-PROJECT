@@ -28,6 +28,7 @@ import WilliamHillCASB from './Cards/WilliamHillCASB';
 import RattiDasti from './Cards/RattiDasti';
 import OSAbstract from './Cards/OSAbstract';
 import OSMachete from './Cards/OSMachete';
+import OS8yrs from './Cards/OS8yrs';
 import LouisSonoma from './Cards/LouisSonoma';
 import OZVzinfandel from './Cards/OZVzinfandel'
 import MaggioPinot from './Cards/MaggioPinot'
@@ -103,6 +104,7 @@ const App = () => {
           <Route path='/ratti-dasti' element={<RattiDasti />}/>
           <Route path='/os-abstract' element={<OSAbstract />}/>
           <Route path='/os-machete' element={<OSMachete />}/>
+          <Route path='/os-8yrs' element={<OS8yrs />}/>
           <Route path='/louis-sonoma' element={<LouisSonoma />}/>
           <Route path='/ozv-zinfandel' element={<OZVzinfandel />}/>
           <Route path='/maggio-pinot' element={<MaggioPinot />}/>
