@@ -67,7 +67,6 @@ const LaMarcaProsecco = () => {
 
 
 
-
                     {/* Back side */}
                     <div className={styles.flipCardBack}>
                         <div>
